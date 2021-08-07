@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url("tree.jfif");
+    border-color: whitesmoke;
+    color: rgb(241, 193, 71);
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    margin: 2px;
+}
+
+.textview {
+    width: 307px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    border-color: whitesmoke;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%)
+}
+
+.bg {
+    background-color: red;
+    height: 100%;
+}
+
+.cal {
+    text-align: center;
+    top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 2px solid rgb(241, 193, 71);
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 20px;
+}
+
+input:hover {
+    box-shadow: 0px 0px 10px whitesmoke;
+}

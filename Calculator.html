@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="cal.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/d4/5b/5a/d45b5ac88464ba7f22c74ae382213510.jpg">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <h1 class="cal"> VIRTUAL CALCULATOR</h1>
+    <div class="name">
+        <form name="form">
+            <input class="textview" name="textview">
+        </form>
+        <table>
+            <td><input class="button" type="button" value="C" onClick="clean()"></td>
+            <td><input class="button" type="button" value="<" onClick="back()"></td>
+            <td><input class="button" type="button" value="ln" onClick="ln()"></td>
+            <td><input class="button" type="button" value="+" onClick="insert('+')"></td>
+            <td><input class="button" type="button" value="sqrt" onClick="sqrt()"></td>
+        </table>
+        <table>
+            <td><input class="button" type="button" value="7" onClick="insert(7)"></td>
+            <td><input class="button" type="button" value="8" onClick="insert(8)"></td>
+            <td><input class="button" type="button" value="9" onClick="insert(9)"></td>
+            <td><input class="button" type="button" value="-" onClick="insert('-')"></td>
+            <td><input class="button" type="button" value="sin" onClick="sin()"></td>
+        </table>
+        <table>
+            <td><input class="button" type="button" value="4" onClick="insert(4)"></td>
+            <td><input class="button" type="button" value="5" onClick="insert(5)"></td>
+            <td><input class="button" type="button" value="6" onClick="insert(6)"></td>
+            <td><input class="button" type="button" value="/" onClick="insert('/')"></td>
+            <td><input class="button" type="button" value="cos" onClick="cos()"></td>
+        </table>
+        <table>
+            <td><input class="button" type="button" value="1" onClick="insert(1)"></td>
+            <td><input class="button" type="button" value="2" onClick="insert(2)"></td>
+            <td><input class="button" type="button" value="3" onClick="insert(3)"></td>
+            <td><input class="button" type="button" value="X" onClick="insert('*')"></td>
+            <td><input class="button" type="button" value="tan" onClick="tan()"></td>
+            
+        </table>
+        <table>
+            <td colspan="2"><input class="button" type="button" value="0" onClick="insert('0')"></td>
+            <td><input class="button" type="button" value="." onClick="insert('.')"></td>
+            <td><input class="button" type="button" value="exp" onClick="expo()"></td>
+            <td rowspan="5"><input class="button" style="height:106" type="button" value="=" onClick="equal()"></td>
+            <td><input class="button" type="button" value="^" onClick="insert('**')"></td>
+        </table>
+    </div>
+</body>
+<script src="cal.js"></script>
+</html>
